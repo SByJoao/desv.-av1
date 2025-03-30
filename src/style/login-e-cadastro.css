@@ -25,7 +25,7 @@ body{
 
 
 main{
-    height: 91vh ;
+    height: 91dvh ;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -62,7 +62,6 @@ form {
 }
 
 .form-header{
-    
     text-align: center;
 }
 
@@ -72,6 +71,8 @@ form {
 .link-login a{
     text-decoration: none;
     margin: 2rem;
+    color: #000000;
+    font-weight: 700;
 }
 
 .input-group{
