@@ -4,6 +4,4 @@ $(document).ready(function(){
         $('#mobile-btn').find('i').toggleClass('fa-x')
     })
 })
-
-
-
+ 
