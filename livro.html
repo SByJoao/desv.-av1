@@ -21,19 +21,13 @@
                 <H1 id="text-logo"><a href="index.html"> +Saber</a></H1>
             </div>
             <ul id="menu">
-                <li><a id="menu-item" href="#home">Início</a></li>
+                <li><a id="menu-item" href="index.html">Início</a></li>
                 <li><a id="menu-item" href="#">Aulas</a></li>
                 <li><a id="menu-item" href="livro.html">Livros</a></li>
                 <li><a id="menu-item" href="#">Sobre</a></li>
             </ul>
     
             <div class="login">
-                <div id="btn-mode">
-                    <button id="switch-theme">
-                        <img id="moon" src="/src/img/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                        <img id="sun" src="/src/img/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                    </button>
-                </div>
                 <a href="/login.html"><img id="img-login" src="/src/img/login.png" alt="Login" height="55px" width="55px"></a>
             </div>
     
@@ -41,47 +35,45 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
-    
         <div id="mobile-menu">
-            <div id="btn-mode">
-                <button id="switch-theme">
-                    <img id="moon" src="/src/img/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                    <img id="sun" src="/src/img/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                </button>
-            </div>
             <ul id="mobile-list">
-                <li><a class="mobile-menu-item" href="#home">Início</a></li>
+                <li><a class="mobile-menu-item" href="index.html">Início</a></li>
                 <li><a class="mobile-menu-item" href="#">Aulas</a></li>
-<<<<<<< HEAD
-                <li><a class="mobile-menu-item" href="#">Livros</a></li>
-=======
                 <li><a class="mobile-menu-item" href="livro.html">Livros</a></li>
                 <li><a class="mobile-menu-item" href="#">sobre</a></li>
->>>>>>> ba1140406364ca6fd21929e78166c467da0a0ad4
                 <li><a id="mobile-login" href="/login.html">Login</a></li>
         </div>
     </header>
 
-    <main id="content">
-        <img src="/src/img/criança lendo livro.png" alt="">
+    <main>
+        <h1 class="book-title">Destaques do Mês</h1>
+        <div class="book-box" >
+            <a href="http://books.google.com.br/books?id=JZ-DDwAAQBAJ&newbks=0&lpg=PT2&hl=pt-BR&pg=PT5&output=embed" target="_blank"><img class="book-bloc-1" src="./src/img/Assets/reina.jpg" alt="capa do livro reinações de narizinho"></a>
+            <a href="http://www.google.com.br/books/edition/Dom_Quixote/4855DwAAQBAJ?hl=pt-BR&gbpv=1&dq=Dom%20Quixote&pg=PP1&printsec=frontcover" target="_blank"><img class="book-bloc-2" src="./src/img/Assets/domqui.jpg" alt="capa do livro dom quixote"></a>
+            <img class="book-bloc-3" src="./src/img/Assets/avessodapele.jpg" alt="capa do livro reinações de narizinho">
+            <img class="book-bloc-4"src="./src/img/Assets/ahoradaestrela.jpg" alt="capa do livro reinações de narizinho">
+            <img class="book-bloc-5"src="./src/img/Assets/morteevida.jpg" alt="capa do livro reinações de narizinho">
+       </div>
 
-        <section id="home">
-            <h2>+Saber é 100% gratuito!</h2>
-            <p>O +Saber é uma plataforma inovadora de estudos que oferece videoaulas e materias didáticos gratuitos, ajudando estudantes de diversas àreas a aprofundarem seus conhecimentos de maneira acessível e dinâmica</p>
-        </section>
+       <form action="/submit" method="post"> 
+        <input type="text" id="filtro" placeholder="Ordenar por" required><img class="fil" src="src/img/Assets/filtro.png" alt="filtro de pesquisa">
+        <input type="text" id="search"  placeholder="Buscar" required><img class="lupa" src="src/img/Assets/lupa.png" alt="lupa de pesquisa">      
+      </form>
+      <hr class="linha">
 
-        <section>
-            <a href="/cadastro.html">Cadastre-se já</a>
-        </section>
-
-        <section id=" imgs-main">
-            <img src="/src/img/livro.png" alt="um livro aberto" width="250px" height="250px">
-            <img src="/src/img/botao-play.png" alt="botão de play" width="250px" height="250px">
-            <img src="/src/img/diplomado.png" alt="um chapeu de diplomado" width="250px" height="250px">
-        </section> 
- 
+       <div class="books">
+        <a href="http://books.google.com.br/books?id=JZ-DDwAAQBAJ&newbks=0&lpg=PT2&hl=pt-BR&pg=PT5&output=embed" target="_blank"><img class="book-ebook-1" src="./src/img/Assets/reina.jpg" alt="capa do livro reinações de narizinho"></a>  
+     <a href="http://www.google.com.br/books/edition/Dom_Quixote/4855DwAAQBAJ?hl=pt-BR&gbpv=1&dq=Dom%20Quixote&pg=PP1&printsec=frontcover" target="_blank"><img class="book-ebook-2" src="./src/img/Assets/domqui.jpg" alt="capa do livro dom quixote"></a>
+      <img class="book-ebook-3" src="./src/img/Assets/avessodapele.jpg" alt="capa do livro reinações de narizinho">
+      <img class="book-ebook-4"src="./src/img/Assets/ahoradaestrela.jpg" alt="capa do livro reinações de narizinho">
+      <img class="book-ebook-5"src="./src/img/Assets/morteevida.jpg" alt="capa do livro reinações de narizinho">
+      <a href="http://books.google.com.br/books?id=JZ-DDwAAQBAJ&newbks=0&lpg=PT2&hl=pt-BR&pg=PT5&output=embed" target="_blank"><button class="btn-ebook-1">Ebook</button></a>
+      <a href="http://www.google.com.br/books/edition/Dom_Quixote/4855DwAAQBAJ?hl=pt-BR&gbpv=1&dq=Dom%20Quixote&pg=PP1&printsec=frontcover" target="_blank"><button class="btn-ebook-2">Ebook</button></a>
+      <button class="btn-ebook-3">Ebook</button>
+      <button class="btn-ebook-4">Ebook</button>
+      <button class="btn-ebook-5">Ebook</button> 
+    </div> 
     </main>
-
     <footer>
         <div id="footer-conteiner">
             <div >
@@ -107,6 +99,6 @@
         <p>&copy; 2025 - +Saber </p>
 
     </footer>
-    <script src="/src/javascript/script.js"></script>
+    <script src="/src/javascript/script.js"></script>    
 </body>
 </html>
