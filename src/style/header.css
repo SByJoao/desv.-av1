@@ -71,7 +71,7 @@ header {
   width: 25dvh;
   height: 30dvh;
 }
-
+  
 .book-bloc-1 {
   left: 3dvh;
   top: 2.5dvh;
@@ -83,28 +83,23 @@ header {
 .book-bloc-3 {
     left: 7dvh;
     top: 2.5dvh;
-}
-  
+} 
 .book-bloc-4 {
     left: 9dvh;
     top: 2.5dvh;
-}
-
+} 
 .book-bloc-5 {
     left: 11dvh;
     top: 2.5dvh;
-}
-
-
+} 
 .book-bloc-1:hover,
 .book-bloc-2:hover,
 .book-bloc-3:hover,
 .book-bloc-4:hover,
 .book-bloc-5:hover {
   cursor: pointer;
-  border: 1px solid transparent;
-}
-
+  border: 2px solid transparent;
+} 
 #filtro {
   position: relative;
   padding: 1dvh;
@@ -115,16 +110,14 @@ header {
   width: 9%;
   margin-top: 3dvh;
   margin-bottom: 5dvh;
-}
-
+} 
 .fil {
   position: relative;
   right: 2dvh;
   top: 1dvh;
   opacity: 0.3;
   width: 1.5%;
-}
-
+} 
 #search {
   position: relative;
   padding: 8px;
@@ -142,16 +135,14 @@ header {
   width: 1.5%;
   left: 140dvh;
   top: 1dvh;
-}
-
+} 
 .linha {
   position: relative;
   border: 1px solid black;
   opacity: 0.3;
   width: 100%;
   bottom: 3dvh;
-}
-
+} 
 .book-ebook-1:hover,
 .btn-ebook-1:hover,
 .book-ebook-2:hover,
@@ -163,14 +154,14 @@ header {
 .book-ebook-5:hover,
 .btn-ebook-5:hover {
   cursor: pointer;
-}
-
+  border: 2px solid transparent;
+} 
 .btn-ebook-1,
 .btn-ebook-2,
 .btn-ebook-3,
 .btn-ebook-4,
-.btn-ebook-5 {
-  position: relative;
+.btn-ebook-5 { 
+position: relative;
   background-color: #002e15;
   color: white;
   font-weight: bolder;
@@ -179,53 +170,53 @@ header {
   height: 3dvh;
   text-align: center;
 }
-
+.books .book-ebook-1 .btn-ebook-1 .book-ebook-2 .btn-ebook-2
+.book-ebook-3 .btn-ebook-3 .book-ebook-4 .btn-ebook-4 
+.book-ebook-5   {
+  position: relative;
+  top: 0;
+  bottom: 0;
+} 
 .book-ebook-1 {
-  left: 10dvh;
+
 }
 .btn-ebook-1 {
-  top: 3dvh;
-  right: 12dvh;
+  left: 3.5dvh;
 }
 
 .book-ebook-2 {
-  right: 4dvh;
+  left: 3.1dvh;
 }
 .btn-ebook-2 {
-  top: 3dvh;
-  right: 26dvh;
+  left: 13.5dvh;
 }
 
-.book-ebook-3 {
-  right: 18dvh;
+.book-ebook-3{
+  left: 6.4dvh;
 }
+
 .btn-ebook-3 {
-  top: 3dvh;
-  right: 40dvh;
+  left: 23.5dvh;
 }
 
 .book-ebook-4 {
-  right: 32dvh;
+  left: 10dvh;
 }
 .btn-ebook-4 {
-  top: 3dvh;
-  right: 54dvh;
+  left: 35dvh;
 }
 
 .book-ebook-5 {
-  bottom: 31dvh;
-  left: 130dvh;
+  left: 13.3dvh;
 }
 .btn-ebook-5 {
-  bottom: 28dvh;
-  left: 108dvh;
+   left: 45dvh;
 }
-.books{
-    position:relative;
-    display: block;
-    left: 20dvh;
-}
-
+.books { 
+    position: relative;   
+    left: 35dvh;
+    width: 140dvh;  
+} 
 @media screen and (max-width: 1000px) {
   .login,
   #menu {
