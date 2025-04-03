@@ -10,6 +10,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;;
 }
 
 .logo{
@@ -28,6 +29,12 @@ header {
     gap: 3rem;
     font-size: 1.2rem;
     list-style: none;
+}
+
+.login{
+    display: flex;
+    position: relative;
+    gap: 2rem;
 }
 
 #menu-item{

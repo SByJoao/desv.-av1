@@ -7,3 +7,31 @@
     box-sizing: border-box;
 }
 
+.darkmode{
+
+}
+
+#switch-theme{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+#switch-theme img:last-child{
+    display: none;
+}
+
+.darkmode #switch-theme img:first-child{
+    display: none;
+}
+
+.darkmode #switch-theme img:last-child{
+    display: block;
+}
