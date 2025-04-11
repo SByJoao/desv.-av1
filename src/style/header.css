@@ -166,25 +166,7 @@ header {
   cursor: pointer;
   border: 2px solid transparent;
 }
-#filtro {
-  position: relative;
-  padding: 1dvh;
-  border: 1px solid rgb(88, 88, 88);
-  border-radius: 5dvh;
-  left: 3dvh;
-  font-size: 16px;
-  width: 9%;
-  margin-top: 3dvh;
-  margin-bottom: 5dvh;
-}
-.fil {
-  position: relative;
-  right: 2dvh;
-  top: 1dvh;
-  opacity: 0.3;
-  width: 1.5%;
-}
-
+ 
 #searchContainer{
   position: relative;
   margin-top: 1dvh;
@@ -206,6 +188,10 @@ header {
   width: 1.5%;
   left: 25dvh;
   top: 0.5dvh;
+}
+
+#childrenhome{
+  width: 50%;
 }
  
 #popup {
@@ -331,7 +317,63 @@ header {
   left: 35dvh;
   width: 140dvh;
 }
+ 
+.espace{   
+  margin-top: 1dvh;
+  justify-items: center;
+}
 
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 150vh;
+  height: 75vh;
+  position: relative;    
+}
+
+.carousel-container {
+  
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100vh; /* Ajuste automático para 6 imagens (3 originais + 3 duplicadas) */
+}
+
+.carousel-item img {
+  width: 150vh;
+  height: 75vh;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 1%;  
+  width: 100%;
+}
+
+.indicator {
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+  margin: 1dvh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: rgb(87, 160, 179); /* Cor do indicador ativo */
+}
+
+/* ---------------------------------------------------------------------------------------- */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Faz com que o wrapper ocupe toda a altura da janela */
+}
+
+.content {
+  flex: 1; /* Empurra o footer para o fundo, se necessário */
+}
 
 
 

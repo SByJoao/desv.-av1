@@ -72,7 +72,6 @@ function showResults(searchTerm) {
     }
 }
  
- 
 searchBar.addEventListener('input', function () {
     showResults(this.value);  
   
@@ -96,3 +95,5 @@ searchBar.addEventListener('blur', function () {
     setTimeout(() => lup.style.display = 'block', 100);  
     }
 });
+
+
