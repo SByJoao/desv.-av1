@@ -184,24 +184,55 @@ header {
   opacity: 0.3;
   width: 1.5%;
 }
-#search {
+
+#searchContainer{
   position: relative;
+  margin-top: 1dvh;
+  margin-bottom: 4dvh;
+  left: 10dvh;
+}
+
+#search { 
   padding: 8px;
   border: 1px solid rgb(88, 88, 88);
   border-radius: 5dvh;
   font-size: 16px;
-  width: 15%;
-  left: 145dvh;
-  margin-top: 3dvh;
-  margin-bottom: 5dvh;
+  width: 15%; 
 }
-.lupa {
-  position: relative;
+#lupa {
+  position: absolute;
+  display: block;
   opacity: 0.3;
   width: 1.5%;
-  left: 140dvh;
-  top: 1dvh;
+  left: 25dvh;
+  top: 0.5dvh;
 }
+ 
+#popup {
+  position: absolute;
+  top: 4dvh;
+  width: 15%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 0 4px 6px rgb(87, 160, 179);
+  z-index: 100000;
+}
+
+.item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #f0f0f0;
+}
+
+
+
 #linha {
   position: relative;
   border: 1px solid black;
@@ -261,6 +292,7 @@ header {
   bottom: 0;
 }
 .book-ebook-1 {
+    top: 0;
 }
 .btn-ebook-1 {
   left: 3.5dvh;
@@ -299,6 +331,10 @@ header {
   left: 35dvh;
   width: 140dvh;
 }
+
+
+
+
 @media screen and (max-width: 1000px) {
   .login,
   #menu {

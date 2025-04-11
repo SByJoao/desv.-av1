@@ -60,10 +60,12 @@
             <a href="http://www.google.com.br/books/edition/Morte_e_vida_severina/Ahj7XZhJxvcC?hl=pt-BR&gbpv=1&dq=morte%20e%20vida%20severina&pg=PP1&printsec=frontcover" target="_blank"><img class="book-bloc-5"src="./src/img/Assets/livros/morteevida.jpg" alt="capa do livro Morte e Vida Severina"></a>
        </div>
 
-       <form action="/submit" method="post"> 
-        <input type="text" id="filtro" placeholder="Ordenar por" required><img class="fil" src="src/img/Assets/icons/filtro.png" alt="filtro de pesquisa">
-        <input type="text" id="search"  placeholder="Buscar" required><img class="lupa" src="src/img/Assets/icons/lupa.png" alt="lupa de pesquisa">      
-      </form>
+      
+        <!-- <input type="text" id="filtro" placeholder="Ordenar por" required><img class="fil" src="src/img/Assets/icons/filtro.png" alt="filtro de pesquisa"> -->
+        <div id="searchContainer">
+        <input type="text" id="search"  placeholder="Buscar" required><img id="lupa" src="src/img/Assets/icons/lupa.png" alt="lupa de pesquisa">   
+        <div id="popup"></div>
+  </div>
       <hr id="linha">
 
        <div class="books">
