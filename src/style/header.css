@@ -25,6 +25,9 @@
         background-color: rgb(255, 255, 255);
         color: #000000;
 }
+#title-{
+  color: #fff;
+}
 }
 
 #switch-theme {
@@ -203,9 +206,16 @@ header {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
+  text-align: center;
   display: none;
-  box-shadow: 0 4px 6px rgb(87, 160, 179);
+  box-shadow: 0 6px 8px rgb(87, 160, 179);
   z-index: 100000;
+}
+
+#popup .item:hover{
+  font-weight: bold;
+  color: #fff;   
+  background-color: rgb(87, 160, 179);
 }
 
 .item {
@@ -215,10 +225,7 @@ header {
 
 .item:hover {
   background-color: #f0f0f0;
-}
-
-
-
+} 
 #linha {
   position: relative;
   border: 1px solid black;
@@ -238,7 +245,6 @@ header {
 .btn-ebook-5:hover {
   cursor: pointer;
   border: 2px solid transparent;
- 
 }
 
 .btn-ebook-1:hover,
@@ -375,7 +381,59 @@ header {
   flex: 1; /* Empurra o footer para o fundo, se necessário */
 }
 
+#title-{
+  position: relative;
+  text-align: center;
+  margin-top: 5dvh ;
+  color: #000;
+  font-weight: 880;
+}
 
+#searchContainer-cursos{
+  position: relative;
+  margin-top: 1dvh;
+  margin-bottom: 4dvh;
+  left: 68dvh;
+}
+
+#search-cursos { 
+  padding: 8px;
+  border: 1px solid rgb(88, 88, 88);
+  border-radius: 5dvh;
+  font-size: 16px;
+  width: 35%; 
+}
+#lupa-cursos {
+  position: absolute;
+  display: block;
+  opacity: 0.3;
+  width: 1.5%;
+  left: 65dvh;
+  top: 0.4dvh;
+  
+}
+
+#popup-cursos {
+  position: absolute;
+  top: 4dvh;
+  width: 35%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+  box-shadow: 0 6px 8px rgb(87, 160, 179);
+  z-index: 100001;
+}
+
+#popup-cursos .item:hover{
+  font-weight: bold;
+  color: #fff;   
+  background-color: rgb(87, 160, 179);
+}
+ 
 
 @media screen and (max-width: 1000px) {
   .login,

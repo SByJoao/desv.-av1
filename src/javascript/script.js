@@ -1,37 +1,4 @@
-$(document).ready(function () {
-  $("#mobile-btn").on("click", function () {
-    $("#mobile-menu").toggleClass("active");
-    $("#mobile-btn").find("i").toggleClass("fa-x");
-  });
-});
-
-// dark mode //
-
-let darkMode = localStorage.getItem("darkmode");
-const themeSwitch = document.getElementById("switch-theme");
-
-const enableDarkmode = () => {
-  document.body.classList.add("darkmode");
-  localStorage.setItem("darkmode", "active");
-};
-
-const disableDarkmode = () => {
-  document.body.classList.remove("darkmode");
-  localStorage.setItem("darkmode", null);
-};
-
-if (darkMode === "active") enableDarkmode();
-
-themeSwitch.addEventListener("click", () => {
-  darkMode = localStorage.getItem("darkmode");
-  darkMode !== "active" ? enableDarkmode() : disableDarkmode();
-});
-
-//---------------------------------------------------------------------------------------------------------------------------------------------------------//
-
-//filtro - busca//
- 
-const items = [
+ const items = [
   { name: "Reinações de Narizinho", url: "http://books.google.com.br/books?id=JZ-DDwAAQBAJ&newbks=0&lpg=PT2&hl=pt-BR&pg=PT5&output=embed" },
   { name: "Avesso da Pele", url: "http://www.google.com.br/books/edition/O_avesso_da_pele_Vencedor_Jabuti_2021/cC_tDwAAQBAJ?hl=pt-BR&gbpv=1&dq=avesso%20da%20pele&pg=PP1&printsec=frontcover" },
   { name: "Dom Quixote", url: "http://www.google.com.br/books/edition/Dom_Quixote/4855DwAAQBAJ?hl=pt-BR&gbpv=1&dq=Dom%20Quixote&pg=PP1&printsec=frontcover" },
@@ -95,5 +62,6 @@ searchBar.addEventListener('blur', function () {
     setTimeout(() => lup.style.display = 'block', 100);  
     }
 });
+
 
 
