@@ -46,6 +46,14 @@ body {
   );
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
 #nav-login {
   width: 100%;
   padding: 1rem;
@@ -60,23 +68,33 @@ body {
 
 .text-logo-login a {
   text-decoration: none;
-  padding-left: 10px;
   color: rgb(38, 66, 73);
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
 }
 
+.text-logo-login a:hover {
+  color: rgb(59, 162, 188);
+}
+
+
 main {
-  height: 91dvh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0;
 }
+
 
 #cadastro-conteiner {
   display: flex;
-  width: 80%;
-  height: 80vh;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80vh;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 #conteiner-img-cadastro {
@@ -84,7 +102,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.087);
 }
 
@@ -99,10 +117,15 @@ form {
   align-items: center;
   flex-direction: column;
   background-color: #fff;
+  padding: 2rem;
 }
 
 .form-header {
   text-align: center;
+}
+
+.form-header .title h2 {
+  font-size: 1.8rem;
 }
 
 .link-login {
@@ -115,6 +138,10 @@ form {
   font-weight: 700;
 }
 
+.link-login a:hover {
+  color: rgb(59, 162, 188);
+}
+
 .input-group {
   display: flex;
   flex-wrap: wrap;
@@ -125,15 +152,18 @@ form {
 .input-box {
   display: flex;
   flex-direction: column;
-  margin: 1.1rem;
+  margin: 0.8rem 0;
+  width: calc(50% - 1rem);
 }
 
 .input-box input {
-  margin: 0.6rem 0;
+  margin: 0.5rem 0;
   padding: 0.8rem 1.2rem;
   border: none;
-  border-radius: 10px;
-  box-shadow: 1px 1px 10px #0000001c;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 
 .input-box input:hover {
@@ -146,15 +176,18 @@ form {
 
 .input-box label,
 .gender-group h6 {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #000000c0;
 }
 
 .gender-group {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
+  width: 100%;
 }
 
 .gender-input {
@@ -163,7 +196,7 @@ form {
 }
 
 .gender-input input {
-  margin-left: 5rem;
+  margin-right: 0.5rem;
 }
 
 .gender-input label {
@@ -191,6 +224,7 @@ form {
 .button-login a {
   text-decoration: none;
   color: #000000;
+  font-weight: bold;
   font-size: 1rem;
   font-weight: 400;
 }
