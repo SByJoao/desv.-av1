@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+  
 .darkmode {
   background-color: rgb(45, 43, 43);
 
@@ -23,11 +23,39 @@
     .btn-ebook-4,
     .btn-ebook-5{
         background-color: rgb(255, 255, 255);
-        color: #000000;
+        color: rgb(45, 43, 43);
 }
 #title-{
   color: #fff;
 }
+
+#cursosContainer h1{
+  color: rgb(45, 43, 43);
+}
+#cursosContainer button{
+  background-color: rgb(45, 43, 43);
+  color: #fff;
+}
+
+#search-cursos {
+  background-color:rgb(88, 88, 88);
+  color: #fff
+}
+#search-cursos::placeholder{
+  color: #fff;
+}
+ 
+#popup-cursos {
+  background-color:rgb(88, 88, 88);
+  border: 1px solid #ccc;
+}
+
+#popup-cursos .item:hover{
+  font-weight: bold;
+  color: #fff;   
+  background-color: rgb(86, 154, 171);
+}
+
 }
 
 #switch-theme {
@@ -58,7 +86,7 @@
 header {
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(
+  background: linear-gradient(to right,
     rgba(83, 153, 170, 1) 0%,
     rgba(64, 119, 132, 1) 50%,
     rgba(33, 61, 68, 1) 100%
@@ -337,11 +365,10 @@ header {
   position: relative;    
 }
 
-.carousel-container {
-  
+.carousel-container { 
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 100vh; /* Ajuste automático para 6 imagens (3 originais + 3 duplicadas) */
+  width: 100vh; 
 }
 
 .carousel-item img {
@@ -367,56 +394,56 @@ header {
 }
 
 .indicator.active {
-  background-color: rgb(87, 160, 179); /* Cor do indicador ativo */
+  background-color: rgb(87, 160, 179);  
 }
 
 /* ---------------------------------------------------------------------------------------- */
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Faz com que o wrapper ocupe toda a altura da janela */
+  min-height: 100vh;  
 }
 
 .content {
-  flex: 1; /* Empurra o footer para o fundo, se necessário */
+  flex: 1; 
 }
 
 #title-{
   position: relative;
   text-align: center;
-  margin-top: 5dvh ;
+  bottom: -5dvh ;
   color: #000;
   font-weight: 880;
 }
 
 #searchContainer-cursos{
   position: relative;
-  margin-top: 1dvh;
-  margin-bottom: 4dvh;
-  left: 68dvh;
+  bottom: -10dvh;
+  width: 30%;
+  left: 77dvh;
 }
 
-#search-cursos { 
+#search-cursos {
   padding: 8px;
   border: 1px solid rgb(88, 88, 88);
   border-radius: 5dvh;
   font-size: 16px;
-  width: 35%; 
+  width: 100%; 
 }
 #lupa-cursos {
-  position: absolute;
+  position: absolute; 
   display: block;
   opacity: 0.3;
-  width: 1.5%;
-  left: 65dvh;
-  top: 0.4dvh;
-  
+  width: 5.7%;
+  left: 55dvh;
+  top: 0.1dvh;
 }
 
 #popup-cursos {
   position: absolute;
   top: 4dvh;
-  width: 35%;
+  bottom: -8.5dvh;
+  width: 100%;
   max-height: 200px;
   overflow-y: auto;
   background-color: #fff;
@@ -434,6 +461,94 @@ header {
   background-color: rgb(87, 160, 179);
 }
  
+
+#img-1-1, #img-2-1{
+  width: 70%;
+}
+
+#img-1, #img-2{
+  position: relative;
+  display: inline-block;
+ 
+}
+#img-1{
+ bottom: -1dvh;
+right: -40dvh;
+}
+
+#img-2{
+  bottom: -0.5dvh;
+  right: -75dvh;
+}
+#cursosContainer{
+  position: relative;
+  top: -1dvh;
+  height: 60dvh;
+  border-radius: 75px; 
+  background: linear-gradient(to left,
+   rgba(33,61,68,1) 0%,
+    rgba(64,119,132,1) 50%,
+     rgba(83,153,170,1) 100%);
+}
+#cursosContainer button:hover{
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+#cursosContainer button{
+  position: relative;
+  border-radius: 30px;
+  background-color: #fff;
+  width: 30dvh;
+  height: 20dvh;  
+  font-size: 30px;
+  border: none;
+  font-weight: bold;  
+  cursor: pointer;  
+} 
+
+#btn-cursos-1{
+  top: 7dvh;
+  left: 30dvh;
+}
+#btn-cursos-2{
+  top: 9dvh;
+  left: 40dvh;
+}
+#btn-cursos-3{
+  top: 7dvh;
+  left: 50dvh;
+}
+#btn-cursos-4{
+  top: 7dvh;
+  left: 60dvh;
+}
+#btn-cursos-5{
+  top: 31dvh;
+  right: 72dvh;
+}
+#btn-cursos-6{
+  top: 31dvh;
+  right: 61dvh;
+}
+#btn-cursos-7{
+  top: 11dvh;
+  right: -130dvh;
+}
+
+#cursosContainer img{
+  position: relative;
+  justify-self: center;
+  display: block;
+  width: 30%;
+}
+
+#cursosContainer h1{
+  position: relative;
+  bottom: -5dvh;
+  font-weight: bold;
+  color: #fff;
+  justify-self: center;
+}
 
 @media screen and (max-width: 1000px) {
   .login,
