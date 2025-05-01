@@ -5,30 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="/src/style/global.css">
     <link rel="stylesheet" href="/src/style/header.css">
-    <link rel="stylesheet" href="/src/style/footer.css">
-    <link rel="stylesheet" href="/src/style/main.css">
+    <link rel="stylesheet" href="/src/style/footer.css">   
+    <script src="/src/javascript/script.js" defer></script>
+    <script src="/src/javascript/script-darkmode.js" defer></script>
     <title>+Saber</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
             <div class="logo">
-                <a href="#home">
-                    <img id="img-logo" src="/src/img/logo.png" alt="Logo" height="55px" width="55px">
+                <a href="index.html">
+                    <img id="img-logo" src="/src/img/Assets/icons/logo.png" alt="Logo" height="55px" width="55px">
                 </a>
                 <H1 id="text-logo"><a href="index.html"> +Saber</a></H1>
             </div>
             <ul id="menu">
                 <li><a id="menu-item" href="index.html">Início</a></li>
                 <li><a id="menu-item" href="#">Aulas</a></li>
-                <li><a id="menu-item" href="livro.html">Livros</a></li>
-                <li><a id="menu-item" href="#">Cursos</a></li>
+                <li><a id="menu-item" href="#">Livros</a></li>
+                <li><a id="menu-item" href="curso.html">Cursos</a></li>
             </ul>
     
             <div class="login">
-                <a href="/login.html"><img id="img-login" src="/src/img/login.png" alt="Login" height="55px" width="55px"></a>
+                <div id="btn-mode">
+                    <button id="switch-theme">
+                        <img id="moon" src="/src/img/Assets/icons/moon.svg" alt="">
+                        <img id="sun" src="/src/img/Assets/icons/sun.svg" alt="">
+                    </button>
+                </div>
+                <a href="/login.html"><img id="img-login" src="/src/img/Assets/icons/login.png" alt="Login" height="55px" width="55px"></a>
             </div>
     
             <button id="mobile-btn">
@@ -40,7 +46,7 @@
                 <li><a class="mobile-menu-item" href="index.html">Início</a></li>
                 <li><a class="mobile-menu-item" href="#">Aulas</a></li>
                 <li><a class="mobile-menu-item" href="livro.html">Livros</a></li>
-                <li><a class="mobile-menu-item" href="#">Cursos</a></li>
+                <li><a class="mobile-menu-item" href="curso.html">Cursos</a></li>
                 <li><a id="mobile-login" href="/login.html">Login</a></li>
         </div>
     </header>
@@ -48,32 +54,30 @@
     <main>
         <h1 class="book-title">Destaques do Mês</h1>
         <div class="book-box" >
-            <a href="http://books.google.com.br/books?id=JZ-DDwAAQBAJ&newbks=0&lpg=PT2&hl=pt-BR&pg=PT5&output=embed" target="_blank"><img class="book-bloc-1" src="./src/img/Assets/reina.jpg" alt="capa do livro Reinações de Narizinho"></a>
-            <a href="http://www.google.com.br/books/edition/Dom_Quixote/4855DwAAQBAJ?hl=pt-BR&gbpv=1&dq=Dom%20Quixote&pg=PP1&printsec=frontcover" target="_blank"><img class="book-bloc-2" src="./src/img/Assets/domqui.jpg" alt="capa do livro Dom Quixote"></a>
-            <a href="http://www.google.com.br/books/edition/O_avesso_da_pele_Vencedor_Jabuti_2021/cC_tDwAAQBAJ?hl=pt-BR&gbpv=1&dq=avesso%20da%20pele&pg=PP1&printsec=frontcover" target="_blank"><img class="book-bloc-3" src="./src/img/Assets/avessodapele.jpg" alt="capa do livro Avesso da Pele"> </a> 
-            <a href="http://www.google.com.br/books/edition/A_hora_da_estrela_de_Clarice/EcgOEAAAQBAJ?hl=pt-BR&gbpv=1&dq=A%20hora%20da%20estrela&pg=PP1&printsec=frontcover" target="_blank"><img class="book-bloc-4"src="./src/img/Assets/ahoradaestrela.jpg" alt="capa do livro A Hora da Estrela"></a>
-            <a href="http://www.google.com.br/books/edition/Morte_e_vida_severina/Ahj7XZhJxvcC?hl=pt-BR&gbpv=1&dq=morte%20e%20vida%20severina&pg=PP1&printsec=frontcover" target="_blank"><img class="book-bloc-5"src="./src/img/Assets/morteevida.jpg" alt="capa do livro Morte e Vida Severina"></a>
+            <a href="http://books.google.com.br/books?id=JZ-DDwAAQBAJ&newbks=0&lpg=PT2&hl=pt-BR&pg=PT5&output=embed" target="_blank"><img class="book-bloc-1" src="./src/img/Assets/livros/reina.jpg" alt="capa do livro Reinações de Narizinho"></a>
+            <a href="http://www.google.com.br/books/edition/Dom_Quixote/4855DwAAQBAJ?hl=pt-BR&gbpv=1&dq=Dom%20Quixote&pg=PP1&printsec=frontcover" target="_blank"><img class="book-bloc-2" src="./src/img/Assets/livros/domqui.jpg" alt="capa do livro Dom Quixote"></a>
+            <a href="http://www.google.com.br/books/edition/O_avesso_da_pele_Vencedor_Jabuti_2021/cC_tDwAAQBAJ?hl=pt-BR&gbpv=1&dq=avesso%20da%20pele&pg=PP1&printsec=frontcover" target="_blank"><img class="book-bloc-3" src="./src/img/Assets/livros/avessodapele.jpg" alt="capa do livro Avesso da Pele"> </a> 
+            <a href="http://www.google.com.br/books/edition/A_hora_da_estrela_de_Clarice/EcgOEAAAQBAJ?hl=pt-BR&gbpv=1&dq=A%20hora%20da%20estrela&pg=PP1&printsec=frontcover" target="_blank"><img class="book-bloc-4"src="./src/img/Assets/livros/ahoradaestrela.jpg" alt="capa do livro A Hora da Estrela"></a>
+            <a href="http://www.google.com.br/books/edition/Morte_e_vida_severina/Ahj7XZhJxvcC?hl=pt-BR&gbpv=1&dq=morte%20e%20vida%20severina&pg=PP1&printsec=frontcover" target="_blank"><img class="book-bloc-5"src="./src/img/Assets/livros/morteevida.jpg" alt="capa do livro Morte e Vida Severina"></a>
        </div>
-
-       <form action="/submit" method="post"> 
-        <input type="text" id="filtro" placeholder="Ordenar por" required><img class="fil" src="src/img/Assets/filtro.png" alt="filtro de pesquisa">
-        <input type="text" id="search"  placeholder="Buscar" required><img class="lupa" src="src/img/Assets/lupa.png" alt="lupa de pesquisa">      
-      </form>
-      <hr class="linha">
-
+ 
+        <div id="searchContainer">
+        <input type="text" id="search"  placeholder="Buscar" required><img id="lupa" src="src/img/Assets/icons/lupa.png" alt="lupa de pesquisa">   
+        <div id="popup"></div>
+        </div>
+        <hr id="linha">
        <div class="books">
-    <a href="http://books.google.com.br/books?id=JZ-DDwAAQBAJ&newbks=0&lpg=PT2&hl=pt-BR&pg=PT5&output=embed" target="_blank"><img class="book-ebook-1" src="./src/img/Assets/reina.jpg" alt="capa do livro reinações de narizinho"></a>  
-    <a href="http://www.google.com.br/books/edition/Dom_Quixote/4855DwAAQBAJ?hl=pt-BR&gbpv=1&dq=Dom%20Quixote&pg=PP1&printsec=frontcover" target="_blank"><img class="book-ebook-2" src="./src/img/Assets/domqui.jpg" alt="capa do livro dom quixote"></a>
-    <a href="http://www.google.com.br/books/edition/O_avesso_da_pele_Vencedor_Jabuti_2021/cC_tDwAAQBAJ?hl=pt-BR&gbpv=1&dq=avesso%20da%20pele&pg=PP1&printsec=frontcover" target="_blank"> <img class="book-ebook-3" src="./src/img/Assets/avessodapele.jpg" alt="capa do livro Avesso da Pele"></a>
-    <a href="http://www.google.com.br/books/edition/A_hora_da_estrela_de_Clarice/EcgOEAAAQBAJ?hl=pt-BR&gbpv=1&dq=A%20hora%20da%20estrela&pg=PP1&printsec=frontcover" target="_blank"><img class="book-ebook-4"src="./src/img/Assets/ahoradaestrela.jpg" alt="capa do livro a Hora da Estrela"></a>
-    <a href="http://www.google.com.br/books/edition/Morte_e_vida_severina/Ahj7XZhJxvcC?hl=pt-BR&gbpv=1&dq=morte%20e%20vida%20severina&pg=PP1&printsec=frontcover" target="_blank"><img class="book-ebook-5"src="./src/img/Assets/morteevida.jpg" alt="capa do livro Morte e Vida Severina"></a> 
+    <a href="http://books.google.com.br/books?id=JZ-DDwAAQBAJ&newbks=0&lpg=PT2&hl=pt-BR&pg=PT5&output=embed" target="_blank"><img class="book-ebook-1" src="./src/img/Assets/livros/reina.jpg" alt="capa do livro reinações de narizinho"></a>  
+    <a href="http://www.google.com.br/books/edition/Dom_Quixote/4855DwAAQBAJ?hl=pt-BR&gbpv=1&dq=Dom%20Quixote&pg=PP1&printsec=frontcover" target="_blank"><img class="book-ebook-2" src="./src/img/Assets/livros/domqui.jpg" alt="capa do livro dom quixote"></a>
+    <a href="http://www.google.com.br/books/edition/O_avesso_da_pele_Vencedor_Jabuti_2021/cC_tDwAAQBAJ?hl=pt-BR&gbpv=1&dq=avesso%20da%20pele&pg=PP1&printsec=frontcover" target="_blank"> <img class="book-ebook-3" src="./src/img/Assets/livros/avessodapele.jpg" alt="capa do livro Avesso da Pele"></a>
+    <a href="http://www.google.com.br/books/edition/A_hora_da_estrela_de_Clarice/EcgOEAAAQBAJ?hl=pt-BR&gbpv=1&dq=A%20hora%20da%20estrela&pg=PP1&printsec=frontcover" target="_blank"><img class="book-ebook-4"src="./src/img/Assets/livros/ahoradaestrela.jpg" alt="capa do livro a Hora da Estrela"></a>
+    <a href="http://www.google.com.br/books/edition/Morte_e_vida_severina/Ahj7XZhJxvcC?hl=pt-BR&gbpv=1&dq=morte%20e%20vida%20severina&pg=PP1&printsec=frontcover" target="_blank"><img class="book-ebook-5"src="./src/img/Assets/livros/morteevida.jpg" alt="capa do livro Morte e Vida Severina"></a> 
 
     <a href="http://books.google.com.br/books?id=JZ-DDwAAQBAJ&newbks=0&lpg=PT2&hl=pt-BR&pg=PT5&output=embed" target="_blank"><button class="btn-ebook-1">Ebook</button></a>
     <a href="http://www.google.com.br/books/edition/Dom_Quixote/4855DwAAQBAJ?hl=pt-BR&gbpv=1&dq=Dom%20Quixote&pg=PP1&printsec=frontcover" target="_blank"><button class="btn-ebook-2">Ebook</button></a>
     <a href="http://www.google.com.br/books/edition/O_avesso_da_pele_Vencedor_Jabuti_2021/cC_tDwAAQBAJ?hl=pt-BR&gbpv=1&dq=avesso%20da%20pele&pg=PP1&printsec=frontcover" target="_blank"  ><button class="btn-ebook-3">Ebook</button></a>
     <a href="http://www.google.com.br/books/edition/A_hora_da_estrela_de_Clarice/EcgOEAAAQBAJ?hl=pt-BR&gbpv=1&dq=A%20hora%20da%20estrela&pg=PP1&printsec=frontcover" target="_blank"><button class="btn-ebook-4">Ebook</button></a>
     <a href="http://www.google.com.br/books/edition/Morte_e_vida_severina/Ahj7XZhJxvcC?hl=pt-BR&gbpv=1&dq=morte%20e%20vida%20severina&pg=PP1&printsec=frontcover" target="_blank"><button class="btn-ebook-5">Ebook</button></a>
-
     </div> 
     </main>
     <footer>
@@ -101,6 +105,6 @@
         <p>&copy; 2025 - +Saber </p>
 
     </footer>
-    <script src="/src/javascript/script.js"></script>    
+    
 </body>
 </html>

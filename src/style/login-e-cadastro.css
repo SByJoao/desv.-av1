@@ -1,190 +1,274 @@
+.darkmode {
+    background: none; 
+    background-color: rgb(45, 43, 43);
 
-body{
-    font-family: "Inter", "Montserrat", sans-serif;
-    background: linear-gradient(rgba(83,153,170,1) 0%, 
-    rgba(64,119,132,1) 50%, rgba(33,61,68,1) 100%);;
-}
+    form{
+        background-color: #887f7f;
+    }
 
-#nav-login{
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-.logo-login{
-    display: flex;
-    align-items: center;
-}
-
-.text-logo-login a{
-    text-decoration: none;
-    padding-left: 10px ;
-    color: rgba(33,61,68);
-}
-
-
-main{
-    height: 91dvh ;
-    width: 100%;
+    .text-logo-login a {
+       
+        color: rgb(89, 164, 183);
+      }
+  }
+  
+  #switch-theme {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #switch-theme img:last-child {
+    display: none;
+  }
+  
+  .darkmode #switch-theme img:first-child {
+    display: none;
+  }
+  
+  .darkmode #switch-theme img:last-child {
+    display: block;
+  }
+
+body {
+  font-family: "Inter", "Montserrat", sans-serif;
+  background: linear-gradient(
+    rgba(83, 153, 170, 1) 0%,
+    rgba(64, 119, 132, 1) 50%,
+    rgba(33, 61, 68, 1) 100%
+  );
 }
 
-#cadastro-conteiner{
-    display: flex;
-    width: 80%;
-    height: 80vh;
-    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-#conteiner-img-cadastro{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.087);
+
+#nav-login {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
-#img-cadastro{
-    width: 30rem;
+.logo-login {
+  display: flex;
+  align-items: center;
+}
+
+.text-logo-login a {
+  text-decoration: none;
+  color: rgb(38, 66, 73);
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.text-logo-login a:hover {
+  color: rgb(59, 162, 188);
+}
+
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+
+#cadastro-conteiner {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#conteiner-img-cadastro {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.087);
+}
+
+#img-cadastro {
+  width: 30rem;
 }
 
 form {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem;
 }
 
-.form-header{
-    text-align: center;
+.form-header {
+  text-align: center;
+}
+
+.form-header .title h2 {
+  font-size: 1.8rem;
 }
 
 .link-login {
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
-.link-login a{
-    text-decoration: none;
-    margin: 2rem;
-    color: #000000;
-    font-weight: 700;
+.link-login a {
+  text-decoration: none;
+  margin: 2rem;
+  color: #000000;
+  font-weight: 700;
 }
 
-.input-group{
+.link-login a:hover {
+  color: rgb(59, 162, 188);
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8rem 0;
+  width: calc(50% - 1rem);
+}
+
+.input-box input {
+  margin: 0.5rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+.input-box label,
+.gender-group h6 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.gender-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.gender-input {
+  display: flex;
+  align-items: center;
+}
+
+.gender-input input {
+  margin-right: 0.5rem;
+}
+
+.gender-input label {
+  margin-left: 0.5rem;
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.button-login button {
+  width: 40vh;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  background-color: rgb(59, 162, 188);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px #0000001c;
+  border: none;
+}
+
+.button-login button:hover {
+  background-color: rgb(36, 180, 213);
+}
+
+.button-login a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#btn-mode{
+    position: relative;
+    left: 82dvh;
+    top: 1dvh;
+}
+
+
+
+@media screen and (max-width: 1700px) {
+  #conteiner-img-cadastro {
+    display: none;
+  }
+
+  #cadastro-conteiner {
+    width: 60%;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  #cadastro-conteiner {
+    width: 90%;
+  }
+  .input-group {
     display: flex;
+
+    overflow-y: scroll;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 0;
-}
+  }
 
-.input-box{
-    display: flex;
+  .gender-input {
+    margin-top: 2rem;
+  }
+
+  .gender-group {
     flex-direction: column;
-    margin: 1.1rem;
+  }
 }
 
-.input-box input{
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px #0000001c;
-}
 
-.input-box input:hover{
-    background-color: #eeeeee75;
-}
-
-.input-box input::placeholder{
-    color: #000000be;
-}
-
-.input-box label, .gender-group h6 {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
-.gender-group{
-    display: flex;
-    margin-top: 1rem;
-    padding: 1rem;
-    
-}
-
-.gender-input{
-    display: flex;
-    align-items: center;
-}
-
-.gender-input input{
-    margin-left: 5rem;
-}
-
-.gender-input label{
-    margin-left: 0.5rem;
-    font-size: 0.81rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
-.button-login button{
-    width: 40vh;
-    margin-top: 2.5rem;
-    padding: 1rem;
-    background-color: rgb(59, 162, 188);
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 10px 10px 10px #0000001c;
-    border: none;
-}
-
-.button-login button:hover{
-    background-color: rgb(36, 180, 213);
-}
-
-.button-login a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-@media screen and (max-width:1700px){
-    #conteiner-img-cadastro{
-        display: none;
-    }
-
-    #cadastro-conteiner{
-        width: 60%;
-    }
-
-    form{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:1160px){
-    #cadastro-conteiner{
-        width: 90%;
-    }
-    .input-group{
-        display: flex;
-        
-        overflow-y: scroll;
-        flex-wrap: wrap;
-    }
-
-    .gender-input{
-        margin-top: 2rem;
-    }
-
-    .gender-group{
-        flex-direction: column;
-    }
-}
