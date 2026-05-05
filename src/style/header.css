@@ -1,66 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --colordefault: rgb(87, 160, 179);
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-  
+
 .darkmode {
   background-color: rgb(45, 43, 43);
+
+  #text-logo a,
+  #menu-item,
+  footer,
+  #cta-button-footer {
+    color: rgb(222, 213, 213);
+  }
 
   .book-title {
     color: #fff;
   }
+
+  #search {
+    border: none;
+  }
+
+  #popup {
+    background-color: rgb(91, 91, 91);
+    color: #efefef;
+    border: none;
+    box-shadow: 0 -1px -1px rgb(87, 160, 179);
+  }
+
   #linha {
     border: 1px solid rgb(255, 255, 255);
   }
 
-    .btn-ebook-1,
-    .btn-ebook-2,
-    .btn-ebook-3,
-    .btn-ebook-4,
-    .btn-ebook-5{
-        background-color: rgb(255, 255, 255);
-        color: rgb(45, 43, 43);
-}
-#title-{
-  color: #fff;
-}
+  .btn-ebook {
+    background-color: rgb(91, 91, 91);
+    color: #efefef;
+    border: none;
+  }
+  #title- {
+    color: #efefef;
+  }
 
-#cursosContainer h1{
-  color: rgb(45, 43, 43);
-}
-#cursosContainer button{
-  background-color: rgb(45, 43, 43);
-  color: #fff;
-}
+  #cursosContainer h1 {
+    color: rgb(45, 43, 43);
+  }
+  #cursosContainer button {
+    background-color: rgb(45, 43, 43);
+    color: #efefef;
+  }
 
-#search-cursos {
-  background-color:rgb(88, 88, 88);
-  color: #fff
-}
-#search-cursos::placeholder{
-  color: #fff;
-}
- 
-#popup-cursos {
-  background-color:rgb(88, 88, 88);
-  border: 1px solid #ccc;
-}
+  #search-cursos,
+  #search {
+    background-color: rgb(88, 88, 88);
+    color: #efefef;
+  }
+  #search-cursos::placeholder,
+  #search::placeholder {
+    color: #efefef;
+  }
 
-#popup-cursos .item:hover{
-  font-weight: bold;
-  color: #fff;   
-  background-color: rgb(86, 154, 171);
-}
+  #popup-cursos {
+    background-color: rgb(88, 88, 88);
+  }
 
+  #popup-cursos .item:hover,
+  #popup .item:hover {
+    color: #efefef;
+    background-color: rgb(130, 172, 183);
+  }
 }
 
 #switch-theme {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   padding: 0;
   border-radius: 50%;
   display: flex;
@@ -69,6 +89,11 @@
   background-color: black;
   border: none;
   cursor: pointer;
+}
+
+#img-login {
+  height: 40px;
+  width: 40px;
 }
 
 #switch-theme img:last-child {
@@ -86,7 +111,9 @@
 header {
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(to right,
+  height: fit-content;
+  background: linear-gradient(
+    to right,
     rgba(83, 153, 170, 1) 0%,
     rgba(64, 119, 132, 1) 50%,
     rgba(33, 61, 68, 1) 100%
@@ -104,15 +131,23 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+#img-logo {
+  height: 40px;
+  width: 40px;
 }
 
 #text-logo a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 15px;
+  display: flex;
+  margin-left: 5px;
 }
 #menu {
   display: flex;
-  align-items: center;
   gap: 3rem;
   font-size: 1.2rem;
   list-style: none;
@@ -121,7 +156,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   color: #ffffff;
+  font-weight: bolder;
 }
+
 #mobile-btn {
   display: none;
 }
@@ -137,21 +174,21 @@ header {
 .login {
   display: flex;
   position: relative;
-  gap: 2rem;
+  gap: 1.181rem;
 }
 
-#menu-item {
-  text-decoration: none;
-  cursor: pointer;
-  color: #ffffff;
-}
 .book-box {
-  position: relative;
+  margin: 0 auto;
   background-color: rgb(87, 160, 179);
-  border-radius: 60px;
-  width: 70%;
-  height: 35dvh;
-  left: 35dvh;
+  padding: 1%;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 30px;
+}
+
+.book-box a {
+  width: fit-content;
+  height: fit-content;
 }
 
 .book-bloc-1,
@@ -159,77 +196,45 @@ header {
 .book-bloc-3,
 .book-bloc-4,
 .book-bloc-5,
-.book-ebook-1,
-.book-ebook-2,
-.book-ebook-3,
-.book-ebook-4,
-.book-ebook-5 {
-  position: relative;
-  width: 25dvh;
-  height: 30dvh;
+.book-ebook {
+  width: 120px;
+  height: 150px;
+  transition: transform 0.3s ease;
 }
 
-.book-bloc-1 {
-  left: 3dvh;
-  top: 2.5dvh;
-}
-.book-bloc-2 {
-  left: 5dvh;
-  top: 2.5dvh;
-}
-.book-bloc-3 {
-  left: 7dvh;
-  top: 2.5dvh;
-}
-.book-bloc-4 {
-  left: 9dvh;
-  top: 2.5dvh;
-}
-.book-bloc-5 {
-  left: 11dvh;
-  top: 2.5dvh;
-}
 .book-bloc-1:hover,
 .book-bloc-2:hover,
 .book-bloc-3:hover,
 .book-bloc-4:hover,
 .book-bloc-5:hover {
   cursor: pointer;
-  border: 2px solid transparent;
+  transform: translateY(-5px);
 }
- 
-#searchContainer{
+
+#searchContainer {
   position: relative;
   margin-top: 1dvh;
   margin-bottom: 4dvh;
-  left: 10dvh;
+  margin-left: 7dvh;
+  width: fit-content;
 }
 
-#search { 
+#search {
   padding: 8px;
   border: 1px solid rgb(88, 88, 88);
   border-radius: 5dvh;
   font-size: 16px;
-  width: 15%; 
-}
-#lupa {
-  position: absolute;
-  display: block;
-  opacity: 0.3;
-  width: 1.5%;
-  left: 25dvh;
-  top: 0.5dvh;
+  width: 110%;
 }
 
-#childrenhome{
-  width: 50%;
+input:focus {
+  outline: none;
 }
- 
+
 #popup {
   position: absolute;
-  top: 4dvh;
-  width: 15%;
-  max-height: 200px;
+  width: fit-content;
+  max-height: fit-content;
   overflow-y: auto;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -237,12 +242,12 @@ header {
   text-align: center;
   display: none;
   box-shadow: 0 6px 8px rgb(87, 160, 179);
-  z-index: 100000;
+  z-index: 1;
 }
 
-#popup .item:hover{
+#popup .item:hover {
   font-weight: bold;
-  color: #fff;   
+  color: #fff;
   background-color: rgb(87, 160, 179);
 }
 
@@ -253,7 +258,7 @@ header {
 
 .item:hover {
   background-color: #f0f0f0;
-} 
+}
 #linha {
   position: relative;
   border: 1px solid black;
@@ -261,189 +266,152 @@ header {
   width: 100%;
   bottom: 3dvh;
 }
-.book-ebook-1:hover,
-.btn-ebook-1:hover,
-.book-ebook-2:hover,
-.btn-ebook-2:hover,
-.book-ebook-3:hover,
-.btn-ebook-3:hover,
-.book-ebook-4:hover,
-.btn-ebook-4:hover,
-.book-ebook-5:hover,
-.btn-ebook-5:hover {
+.book-ebook:hover,
+.btn-ebook:hover {
   cursor: pointer;
-  border: 2px solid transparent;
+  transform: translateY(-5px);
 }
 
-.btn-ebook-1:hover,
-.btn-ebook-2:hover,
-.btn-ebook-3:hover,
-.btn-ebook-4:hover,
-.btn-ebook-5:hover{
-    background-color: rgb(87, 160, 179);
+.btn-ebook:hover {
+  background-color: rgb(87, 160, 179);
 }
 
-.btn-ebook-1,
-.btn-ebook-2,
-.btn-ebook-3,
-.btn-ebook-4,
-.btn-ebook-5 {
+.btn-ebook {
+  transition: transform 0.3s ease;
   position: relative;
-  background-color: #000000;
+  border: 1px solid transparent;
+  background-color: rgb(120, 119, 119);
   color: white;
   font-weight: bolder;
   border-radius: 12px;
-  width: 18dvh;
+  width: 13dvh;
   height: 3dvh;
   text-align: center;
-}
-.books
-  .book-ebook-1
-  .btn-ebook-1
-  .book-ebook-2
-  .btn-ebook-2
-  .book-ebook-3
-  .btn-ebook-3
-  .book-ebook-4
-  .btn-ebook-4
-  .book-ebook-5 {
-  position: relative;
-  top: 0;
-  bottom: 0;
-}
-.book-ebook-1 {
-    top: 0;
-}
-.btn-ebook-1 {
-  left: 3.5dvh;
+  margin-top: 5px;
 }
 
-.book-ebook-2 {
-  left: 3.1dvh;
-}
-.btn-ebook-2 {
-  left: 13.5dvh;
-}
-
-.book-ebook-3 {
-  left: 6.4dvh;
-}
-
-.btn-ebook-3 {
-  left: 23.5dvh;
-}
-
-.book-ebook-4 {
-  left: 10dvh;
-}
-.btn-ebook-4 {
-  left: 35dvh;
-}
-
-.book-ebook-5 {
-  left: 13.3dvh;
-}
-.btn-ebook-5 {
-  left: 45dvh;
-}
 .books {
-  position: relative;
-  left: 35dvh;
-  width: 140dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
- 
-.espace{   
-  margin-top: 1dvh;
-  justify-items: center;
+
+.book-ebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book1 {
+  display: flex; /* Ativa o Flexbox */
+  flex-direction: column; /* Empilha os itens (um abaixo do outro) */
+  align-items: center; /* Centraliza os itens horizontalmente na coluna */
+  padding: 1%;
+}
+
+.book1 img,
+.book1 a {
+  width: fit-content;
+}
+
+.masterCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.container-carousel {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
 }
 
 .carousel {
   display: flex;
-  overflow: hidden;
-  width: 150vh;
-  height: 75vh;
-  position: relative;    
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
 }
 
-.carousel-container { 
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100vh; 
+.carousel-item {
+  flex: 0 0 100%; /* Ocupa 100% da largura do carrossel */
+  scroll-snap-align: start;
 }
 
 .carousel-item img {
-  width: 150vh;
-  height: 75vh;
+  width: 100%; /* A imagem preenche o item */
+  height: 500px; /* Altura fixa para manter o padrão */
+  object-fit: cover; /* Corta a imagem sem esticá-la */
+  border-radius: 15px;
+}
+/* Esconde a barra de rolagem para um visual mais limpo */
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
-.carousel-indicators {
+.indicators {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 1%;  
+  bottom: 3%;
   width: 100%;
 }
 
-.indicator {
-  width: 50px;
-  height: 3px;
-  background-color: #fff;
-  margin: 1dvh;
+.dot {
+  height: 2px;
+  width: 2%;
+  margin: 0 8px;
+  background-color: #bbb;
+  display: inline-block;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.4s ease;
 }
 
-.indicator.active {
-  background-color: rgb(87, 160, 179);  
+.dot.active {
+  background-color: var(--colordefault); /* Cor da bolinha ativa */
+  transform: scale(1.2); /* Fica levemente maior */
 }
 
 /* ---------------------------------------------------------------------------------------- */
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;  
+  min-height: 100vh;
 }
 
 .content {
-  flex: 1; 
+  flex: 1;
 }
 
-#title-{
-  position: relative;
+#title- {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  bottom: -5dvh ;
   color: #000;
   font-weight: 880;
 }
 
-#searchContainer-cursos{
+#searchContainer-cursos {
   position: relative;
-  bottom: -10dvh;
-  width: 30%;
-  left: 77dvh;
+  margin: 0 auto;
+  margin-top: 10dvh;
+  width: fit-content;
 }
 
 #search-cursos {
+  position: relative;
   padding: 8px;
-  border: 1px solid rgb(88, 88, 88);
+  border: 0.5px solid rgb(148, 148, 148);
   border-radius: 5dvh;
   font-size: 16px;
-  width: 100%; 
-}
-#lupa-cursos {
-  position: absolute; 
-  display: block;
-  opacity: 0.3;
-  width: 5.7%;
-  left: 55dvh;
-  top: 0.1dvh;
+  width: 190%;
 }
 
 #popup-cursos {
   position: absolute;
-  top: 4dvh;
-  bottom: -8.5dvh;
-  width: 100%;
+  top: 150px;
+  width: fit-content;
   max-height: 200px;
   overflow-y: auto;
   background-color: #fff;
@@ -452,97 +420,89 @@ header {
   text-align: center;
   display: none;
   box-shadow: 0 6px 8px rgb(87, 160, 179);
-  z-index: 100001;
+  z-index: 1;
 }
 
-#popup-cursos .item:hover{
+#popup-cursos .item:hover {
   font-weight: bold;
-  color: #fff;   
+  color: #fff;
   background-color: rgb(87, 160, 179);
 }
- 
 
-#img-1-1, #img-2-1{
-  width: 70%;
-}
-
-#img-1, #img-2{
-  position: relative;
+#img-1 {
   display: inline-block;
- 
+  width: 20%;
 }
-#img-1{
- bottom: -1dvh;
-right: -40dvh;
+#img-1-1 {
+  width: 100%;
+  z-index: 1;
 }
 
-#img-2{
-  bottom: -0.5dvh;
-  right: -75dvh;
-}
-#cursosContainer{
+#cursosContainer {
   position: relative;
-  top: -1dvh;
-  height: 60dvh;
-  border-radius: 75px; 
-  background: linear-gradient(to left,
-   rgba(33,61,68,1) 0%,
-    rgba(64,119,132,1) 50%,
-     rgba(83,153,170,1) 100%);
+
+  height: 60%;
+  border-radius: 75px;
+  background: linear-gradient(
+    to left,
+    rgba(33, 61, 68, 1) 0%,
+    rgba(64, 119, 132, 1) 50%,
+    rgba(83, 153, 170, 1) 100%
+  );
 }
-#cursosContainer button:hover{
+#cursosContainer button:hover {
   cursor: pointer;
   border: 3px solid transparent;
 }
-#cursosContainer button{
+#cursosContainer button {
   position: relative;
   border-radius: 30px;
   background-color: #fff;
   width: 30dvh;
-  height: 20dvh;  
+  height: 20dvh;
   font-size: 30px;
   border: none;
-  font-weight: bold;  
-  cursor: pointer;  
-} 
+  font-weight: bold;
+  cursor: pointer;
+}
 
-#btn-cursos-1{
+#btn-cursos-1 {
   top: 7dvh;
   left: 30dvh;
 }
-#btn-cursos-2{
+#btn-cursos-2 {
   top: 9dvh;
   left: 40dvh;
 }
-#btn-cursos-3{
+#btn-cursos-3 {
   top: 7dvh;
   left: 50dvh;
 }
-#btn-cursos-4{
+#btn-cursos-4 {
   top: 7dvh;
   left: 60dvh;
 }
-#btn-cursos-5{
+#btn-cursos-5 {
   top: 31dvh;
   right: 72dvh;
 }
-#btn-cursos-6{
+#btn-cursos-6 {
   top: 31dvh;
   right: 61dvh;
 }
-#btn-cursos-7{
+#btn-cursos-7 {
   top: 11dvh;
   right: -130dvh;
 }
 
-#cursosContainer img{
+#cursosContainer img {
   position: relative;
   justify-self: center;
   display: block;
   width: 30%;
 }
 
-#cursosContainer h1{
+#cursosContainer h1 {
   position: relative;
   bottom: -5dvh;
   font-weight: bold;
@@ -580,5 +540,9 @@ right: -40dvh;
     text-decoration: none;
     display: flex;
     margin: 1rem 0;
+    font-weight: bolder;
+  }
+  .container-carousel {
+    width: 100%;
   }
 }
